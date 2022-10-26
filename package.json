@@ -1,0 +1,41 @@
+{
+  "name": "petshop",
+  "version": "1.0.0",
+  "description": "Es una tienda online de venta de productos para mascotas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Yeyo-993/omega-pet-shop-grupo5.git"
+  },
+  "keywords": [
+    "Ecommerce",
+    "para",
+    "mascotas",
+    "hecho",
+    "con",
+    "node"
+  ],
+  "author": "Grupo-05-Jose-Jairo-Willintong-Sergio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Yeyo-993/omega-pet-shop-grupo5/issues"
+  },
+  "homepage": "https://gitlab.com/Yeyo-993/omega-pet-shop-grupo5#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.20.1",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.18.2",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.29.4",
+    "mongoose": "^6.7.0",
+    "mongoose-pagination": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
