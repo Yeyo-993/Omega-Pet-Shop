@@ -9,7 +9,7 @@ function prueba (req, res) {
 //Guardar
 function guardarData (req, res) {
     //INJECTAR UNA PROMISE
-    let myAcceso = new Acceso(req.body);
+    var myAcceso = new Acceso(req.body);
     myAcceso.save((err, result) => {
         res.status(200).send({
             message:result
@@ -19,7 +19,7 @@ function guardarData (req, res) {
 
 //Buscar
 function buscarData(req,res) {
-    let idAcceso = req.params.id;
+    var idAcceso = req.params.id;
     Acceso.findById(idAcceso).exec((err,result)=>{
         if(err){
             res.status(500).send({
@@ -41,11 +41,11 @@ function buscarData(req,res) {
 
 //Listar
 function listarAllData (req, res) {
-    let idAcceso = req.params.id;
+    var idAcceso = req.params.id;
     if(!idAcceso){
-        let result = Acceso.find({}).sort('origen');
+        var result = Acceso.find({}).sort('nombre');
     } else {
-        let result = Acceso.find({_id:idAcceso}).sort('origen');
+        var result = Acceso.find({_id:idAcceso}).sort('nombre');
     }
     result.exec(function(err, result){
         if(err){
@@ -69,7 +69,7 @@ function listarAllData (req, res) {
 
 //Actualizar
 function updateData (req, res) {
-    let idAcceso = req.params.id;
+    var idAcceso = req.params.id;
     Acceso.findOneAndUpdate({_id:idAcceso}, req.body,{new:true},
         function(err, Acceso){
             if(err)
@@ -80,7 +80,7 @@ function updateData (req, res) {
 
 //Delete
 function deleteData (req, res) {
-    let idAcceso = req.params.id;
+    var idAcceso = req.params.id;
     Acceso.findByIdAndDelete(idAcceso,
         function(err, Acceso){
             if(err)

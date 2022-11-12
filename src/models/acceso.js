@@ -1,12 +1,15 @@
-let mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
-let Schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
-let accesoSchema = Schema({
-    origen: String,
-    destino: String,
-    activo: Number
+var accesoSchema = Schema({
+    nombre: String,
+    marca: String,
+    edad: String,
+    cantidad: Number,
+    tamano: Number,
+    precio: Number
 });
 
-const acceso = mongoose.model('tbc_acceso', accesoSchema);
+const acceso = mongoose.model('producto', accesoSchema);
 module.exports = acceso;

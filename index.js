@@ -1,7 +1,7 @@
-let app = require('./app');
-let mongoose = require('mongoose');
-let port = 4200;
+var app = require('./app');
+var mongoose = require('./conexionDB/conexion');
+var port = 4200;
 
-app.listed(port,()=>{
-    console.log("El backend se ejecuto correctamente")
+app.listen(port, ()=>{
+    console.log("El backend se ejecuto correctamente");
 });
