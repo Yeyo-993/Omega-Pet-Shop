@@ -27,14 +27,14 @@ const CompProductosCrear = () => {
         tamano:tamano,
         precio:precio
     })
-    //SI AHY UN STATUS 200
+    //SI HAY UN STATUS 200
     navigate('/')
   }
 
   return(
     <div>
-      <h2>Creacion de Ruta de Vuelos</h2>
-      <form onSubmit={insert}>
+      <h2>Creacion de productos</h2>
+      <form onSubmit={insert} className='mt-2 ml-4 mr-4'>
         <label className='form-label'>Ingrese el Nombre del producto:</label>
         <input
         value={nombre}

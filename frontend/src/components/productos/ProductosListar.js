@@ -37,7 +37,7 @@ const CompProductosListar = ()=>{
     return(
         <div className='container'>
             <div className='row'>
-                <Title>Listado de Rutas de Vuelos</Title>
+                <Title>Listado de productos</Title>
                 <div className='col'>
                     <Link to={'/producto/crear'} className='btn btn-primary mt-2 ml-2 mb-1'><i className="fa-solid fa-square-plus"></i></Link>
                     <table className='table table-dark'>
@@ -49,6 +49,7 @@ const CompProductosListar = ()=>{
                                 <th>Cantidad</th>
                                 <th>Tamaño</th>
                                 <th>Precio</th>
+                                <th>Acción</th>
                             </tr>
                         </thead>
                         <tbody className='table-primary'>
