@@ -12,23 +12,25 @@ const CompHome = ()=>{
         <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#!">Omega Pet Shop</a>
+                <a class="navbar-brand" href="#!" src="https://turbologo.com/designs/16472507">Omega Pet Shop</a>
+                
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li className="nav-item"><a class="nav-link" href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/producto/buscarall/:id?">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Registrarse</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Iniciar Sesion</a></li>
+                        <Link to={'/'} className="nav-item"><i class="nav-link">Home</i></Link>
+                        <Link to={'/listar'} className="nav-item"><i class="nav-link">Productos</i></Link>
+                        <Link to={'/producto/crear'} className="nav-item"><i class="nav-link">Registrarse</i></Link>
+                        <Link to={'/producto/crear'} className="nav-item"><i class="nav-link">Iniciar Sesion</i></Link>
                     </ul>
                 </div>
             </div>
         </nav>
-        <header class="py-5 bg-light border-bottom mb-4">
+        <header class="py-5 bg-info border-bottom mb-4">
             <div class="container">
                 <div class="text-center my-5">
-                    <h1 class="fw-bolder">Welcome to Blog Home!</h1>
-                    <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+                    <h1 class="fw-bolder">Welcome to Omega Pet Shop!</h1>
+                    <p class="lead mb-0">Desarrollador por Grupo 5 U-26</p>
                 </div>
             </div>
         </header>
@@ -39,7 +41,7 @@ const CompHome = ()=>{
                 <div class="col-lg-8">
                     
                     <div class="card mb-4">
-                        <a href="#!"><img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <a href="#!"><img class="card-img-top" src="https://www.dogalize.com/wp-content/uploads/2017/06/La-sverminazione-e-la-pulizia-del-cucciolo-del-cane-2-800x400-800x400.jpg" alt="..." /></a>
                         <div class="card-body">
                             <div class="small text-muted">January 1, 2022</div>
                             <h2 class="card-title">Featured Post Title</h2>
@@ -52,7 +54,7 @@ const CompHome = ()=>{
                         <div class="col-lg-6">
                            
                             <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <a href="#!"><img class="card-img-top" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/2021-10/los-mejores-juegos-de-perritos-cachorros-por-mes-de-edad.png?itok=c_7ZTNtv" alt="..." /></a>
                                 <div class="card-body">
                                     <div class="small text-muted">January 1, 2022</div>
                                     <h2 class="card-title h4">Post Title</h2>
@@ -62,7 +64,7 @@ const CompHome = ()=>{
                             </div>
                           
                             <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <a href="#!"><img class="card-img-top" src="https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/purina-10-datos-curiosos-sobre-los-gatos.png?itok=88pMyzkl" alt="..." /></a>
                                 <div class="card-body">
                                     <div class="small text-muted">January 1, 2022</div>
                                     <h2 class="card-title h4">Post Title</h2>
@@ -74,7 +76,7 @@ const CompHome = ()=>{
                         <div class="col-lg-6">
                         
                             <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <a href="#!"><img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0410/2199/7206/products/Dog-Chow-Salud-Visible-Adultos-Medianos-y-Grandes.png?v=1597237400" alt="..." /></a>
                                 <div class="card-body">
                                     <div class="small text-muted">January 1, 2022</div>
                                     <h2 class="card-title h4">Post Title</h2>
@@ -84,7 +86,7 @@ const CompHome = ()=>{
                             </div>
                          
                             <div class="card mb-4">
-                                <a href="#!"><img class="card-img-top" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                                <a href="#!"><img class="card-img-top" src="https://simaro.co/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/P/u/Purina-ONE-Licitacin-Selecciona-Mezcla-con-el-Real-Pollo-Premium-de-Comida-para-gatos-22-lb-Bolsa_5.jpeg" alt="..." /></a>
                                 <div class="card-body">
                                     <div class="small text-muted">January 1, 2022</div>
                                     <h2 class="card-title h4">Post Title</h2>
@@ -112,7 +114,7 @@ const CompHome = ()=>{
                 <div class="col-lg-4">
                    
                     <div class="card mb-4">
-                        <div class="card-header">Search</div>
+                        <div class="card-header">Buscar</div>
                         <div class="card-body">
                             <div class="input-group">
                                 <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
@@ -121,7 +123,7 @@ const CompHome = ()=>{
                         </div>
                     </div>
                     
-                    <div class="card mb-4">
+                    {/* <div class="card mb-4">
                         <div class="card-header">Categories</div>
                         <div class="card-body">
                             <div class="row">
@@ -141,11 +143,11 @@ const CompHome = ()=>{
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                  
                     <div class="card mb-4">
-                        <div class="card-header">Side Widget</div>
-                        <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+                        <div class="card-header">Omega Pet Shop</div>
+                        <div class="card-body">Encuentra todos los productos para tu mascota en un solo lugar!!</div>
                     </div>
                 </div>
             </div>

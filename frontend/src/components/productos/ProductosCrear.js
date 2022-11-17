@@ -1,6 +1,7 @@
 import axios from 'axios'
 import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const URI = 'http://localhost:4200/producto/crear'
 
@@ -33,8 +34,22 @@ const CompProductosCrear = () => {
 
   return(
     <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Omega Pet Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <Link to={'/'} className="nav-item"><i class="nav-link">Home</i></Link>
+                        <Link to={'/listar'} className="nav-item"><i class="nav-link">Productos</i></Link>
+                        <Link to={'/producto/crear'} className="nav-item"><i class="nav-link">Registrarse</i></Link>
+                        <Link to={'/producto/crear'} className="nav-item"><i class="nav-link">Iniciar Sesion</i></Link>
+                    </ul>
+                </div>
+            </div>
+        </nav>
       <h2>Creacion de productos</h2>
-      <form onSubmit={insert} className='mt-2 ml-4 mr-4'>
+      <form onSubmit={insert} className='m-auto'>
         <label className='form-label'>Ingrese el Nombre del producto:</label>
         <input
         value={nombre}

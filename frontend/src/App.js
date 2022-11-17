@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<CompHome/>}/>
-        <Route path='/producto/buscarall/:id?' element={<CompProductosList/>}/>
+        <Route path='/listar' element={<CompProductosList/>}/>
         <Route path='/producto/crear' element={<CompProductosCrear/>}/>
         <Route path='/producto/actualizar/:id' element={<CompProductsEditar/>}/>
       </Routes>

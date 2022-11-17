@@ -15,7 +15,6 @@ const CompProductosListar = ()=>{
         getProductosMascota()
     },[])
     //CRECION DE METODOS DEL COMPONENTE
-    //METODO PARA LISTAR LAS RUTAS DE VUELO
     const getProductosMascota = async ()=>{
         const res = await axios.get(`${URI}producto/buscarall/`)
         //console.log(res.data)
@@ -27,7 +26,7 @@ const CompProductosListar = ()=>{
         setProducto(res.data['message'])
     }
 
-    //METODO PARA ELIMINAR RUTA DE VUELO
+    //METODO PARA ELIMINAR PRODUCTOS
     const deleteProductosMascotas= async(id) =>{
         axios.delete(`${URI}producto/borrar/${id}`)
         //SI ESTATUS 200
@@ -35,6 +34,21 @@ const CompProductosListar = ()=>{
     }
 
     return(
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Omega Pet Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <Link to={'/'} className="nav-item"><i class="nav-link">Home</i></Link>
+                        <Link to={'/listar'} className="nav-item"><i class="nav-link">Productos</i></Link>
+                        <Link to={'/producto/crear'} className="nav-item"><i class="nav-link">Registrarse</i></Link>
+                        <Link to={'/producto/crear'} className="nav-item"><i class="nav-link">Iniciar Sesion</i></Link>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div className='container'>
             <div className='row'>
                 <Title>Listado de productos</Title>
@@ -76,6 +90,8 @@ const CompProductosListar = ()=>{
                 </div>
             </div>
         </div>
+        </div>
+        
     )
 }
 
